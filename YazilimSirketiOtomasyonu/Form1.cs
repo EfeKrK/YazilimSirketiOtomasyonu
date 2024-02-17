@@ -26,5 +26,37 @@ namespace YazilimSirketiOtomasyonu
         {
             
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+        bool islem = false;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+          
+            if(!islem)
+            {
+                this.Opacity += 0.009;
+            }
+            if (this.Opacity == 1.0)
+            {
+                islem = true;
+            }
+            if (islem)
+            {
+                this.Opacity -= 0.009;
+                if(this.Opacity == 0) {
+                    AnaEkran gtr = new AnaEkran();
+                    gtr.Show();
+                    timer1.Enabled = false;
+                }
+            }
+        }
     }
 }
