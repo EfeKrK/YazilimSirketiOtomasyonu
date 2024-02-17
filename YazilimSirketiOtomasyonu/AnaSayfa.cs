@@ -10,11 +10,22 @@ using System.Windows.Forms;
 
 namespace YazilimSirketiOtomasyonu
 {
-    public partial class AnaEkran : Form
+    public partial class AnaSayfa : Form
     {
-        public AnaEkran()
+        public AnaSayfa()
         {
             InitializeComponent();
+        }
+
+        private void AnaSayfa_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+            //efe
+        }
+
+        private void AnaSayfa_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }
