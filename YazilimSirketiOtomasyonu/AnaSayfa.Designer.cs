@@ -1,6 +1,6 @@
 ﻿namespace YazilimSirketiOtomasyonu
 {
-    partial class AnaEkran
+    partial class AnaSayfa
     {
         /// <summary>
         /// Required designer variable.

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace YazilimSirketiOtomasyonu
 {
-    public partial class AnaEkran : Form
+    public partial class AnaSayfa : Form
     {
-        public AnaEkran()
+        public AnaSayfa()
         {
             InitializeComponent();
         }

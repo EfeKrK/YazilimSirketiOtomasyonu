@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace YazilimSirketiOtomasyonu
 {
-    public partial class Form1 : Form
+    public partial class BaslatmaFormu : Form
     {
         
-        public Form1()
+        public BaslatmaFormu()
         {
             InitializeComponent();
             BaglantiDB baglantiDB = new BaglantiDB();
@@ -52,10 +52,13 @@ namespace YazilimSirketiOtomasyonu
             {
                 this.Opacity -= 0.009;
                 if(this.Opacity == 0) {
-                    AnaEkran gtr = new AnaEkran();
+
+                    AnaSayfa gtr = new AnaSayfa();
                     gtr.Show();
                     timer1.Enabled = false;
+                    this.Hide();
                 }
+               
             }
         }
     }
