@@ -29,18 +29,23 @@ namespace YazilimSirketiOtomasyonu
 
         private void AnaSayfa_Load(object sender, EventArgs e)
         {
-            label2.Parent = pictureBox3;
-            label2.BackColor = Color.Transparent;
-        }
+            label1.Parent = pictureBox3;
+            label1.BackColor = Color.Transparent;
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-        
+
+            pictureBox1.Parent = pictureBox3;
+            pictureBox1.BackColor = Color.Transparent;
+
+            pictureBox2.Parent = pictureBox3;
+            pictureBox2.BackColor = Color.Transparent;
+
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
 
         }
+
+        
     }
 }
