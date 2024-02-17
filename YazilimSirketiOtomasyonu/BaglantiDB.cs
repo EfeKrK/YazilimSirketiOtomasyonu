@@ -9,7 +9,7 @@ namespace YazilimSirketiOtomasyonu
 {
     internal class BaglantiDB
     {
-        private string ConnectionString = "Data Source=EFEKRK;Initial Catalog=MarketYonetimSistemi;Integrated Security=True";
+        private string ConnectionString = "Data Source=EFEKRK;Initial Catalog=YazilimSirketi;Integrated Security=True";
         private SqlConnection connection;
 
         public BaglantiDB()
