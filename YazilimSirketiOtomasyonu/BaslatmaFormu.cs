@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Media;
 namespace YazilimSirketiOtomasyonu
 {
     public partial class BaslatmaFormu : Form
@@ -24,7 +24,10 @@ namespace YazilimSirketiOtomasyonu
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            SoundPlayer ses = new SoundPlayer();
+            string dizin = Application.StartupPath + "\\alizade.wav";
+            ses.SoundLocation = dizin;
+            ses.Play();
         }
 
        
