@@ -16,5 +16,16 @@ namespace YazilimSirketiOtomasyonu
         {
             InitializeComponent();
         }
+
+        private void AnaSayfa_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+            //efe
+        }
+
+        private void AnaSayfa_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

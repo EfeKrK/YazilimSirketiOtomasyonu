@@ -52,11 +52,11 @@ namespace YazilimSirketiOtomasyonu
             {
                 this.Opacity -= 0.009;
                 if(this.Opacity == 0) {
-
+                    this.Hide();
                     AnaSayfa gtr = new AnaSayfa();
                     gtr.Show();
                     timer1.Enabled = false;
-                    this.Hide();
+                    
                 }
                
             }
